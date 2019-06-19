@@ -13,7 +13,6 @@ Contributions are always welcome!
 
 <!-- toc -->
 
-- [Lesson 2: Deep Learning with PyTorch](#lesson-2-deep-learning-with-pytorch)
 - [Lesson 3: Introducing Differential Privacy](#lesson-3-introducing-differential-privacy)
 - [Lesson 4: Evaluating the Privacy of a Function](#lesson-4-evaluating-the-privacy-of-a-function)
 - [Lesson 5: Introducing Local and Global Differential Privacy](#lesson-5-introducing-local-and-global-differential-privacy)
@@ -25,8 +24,6 @@ Contributions are always welcome!
 - [Credits](#credits)
 
 <!-- tocstop -->
-
-## Lesson 2: Deep Learning with PyTorch
 
 ## Lesson 3: Introducing Differential Privacy
 ### Secure & Private AI Program Introduction
@@ -42,11 +39,14 @@ Contributions are always welcome!
 * It's a new field, recently started with statistical database queries around 2003 and even more recently
 * General goal of DP is to ensure that different kinds of statistical analysis don't compromise privacy
 * Privacy is preserved if
+  
   After the analysis, the analyzer doesn't know anything about the people in the dataset. They remain "unobserved"
 * Dalenius's Ad Omnia Guarantee (1977)
+  
   Anything that can be learned about a participant from the statistical database can be learned without access to the database
 * Above definition is basically saying, anything you actually do learn about a person should be only public information
 * Cynthia Dwork, Algorithmic Foundations of Differential Privacy
+  
   "Differential Privacy" describes a promise, made by a data holder, or curator, to a data subject, and the promise is like this: "You will not be affected, adversely or otherwiese, by allowing your data to be used in any study or analysis, no matter what other sudies, data sets, or information sources, are available"
 * True goal of DP is to propose these tools and techniques that allow a data holder to make these promises to individuals who are being studied.
 
