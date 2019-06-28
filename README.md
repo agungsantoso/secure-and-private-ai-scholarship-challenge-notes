@@ -14,7 +14,22 @@ Contributions are always welcome!
 <!-- toc -->
 
 - [Lesson 3: Introducing Differential Privacy](#lesson-3-introducing-differential-privacy)
+  * [Secure & Private AI Program Introduction](#secure--private-ai-program-introduction)
+  * [Lesson 1 Introduction](#lesson-1-introduction)
+  * [What Is Differential Privacy (DP)](#what-is-differential-privacy-dp)
+  * [Can We Just Anonymize Data](#can-we-just-anonymize-data)
+  * [Introducing The Canonical Database](#introducing-the-canonical-database)
+  * [Project Intro Build A Private Database In Python](#project-intro-build-a-private-database-in-python)
+  * [Notebook Exercise Instructions](#notebook-exercise-instructions)
+  * [Project Demo Build A Private Database In Python](#project-demo-build-a-private-database-in-python)
 - [Lesson 4: Evaluating the Privacy of a Function](#lesson-4-evaluating-the-privacy-of-a-function)
+  * [Evaluating The Privacy Of A Function](#evaluating-the-privacy-of-a-function)
+  * [Project Intro Evaluating The Privacy Of A Function](#project-intro-evaluating-the-privacy-of-a-function)
+  * [Project Demo Evaluating The Privacy Of A Function](#project-demo-evaluating-the-privacy-of-a-function)
+  * [Project Intro Calculate L1 Sensitivity For Threshold](#project-intro-calculate-l1-sensitivity-for-threshold)
+  * [Project Demo Calculate L1 Sensitivity For Threshold](#project-demo-calculate-l1-sensitivity-for-threshold)
+  * [Project Intro Perform A Differencing Attack](#project-intro-perform-a-differencing-attack)
+  * [Project Demo Perform A Differencing Attack](#project-demo-perform-a-differencing-attack)
 - [Lesson 5: Introducing Local and Global Differential Privacy](#lesson-5-introducing-local-and-global-differential-privacy)
 - [Lesson 6: Differential Privacy for Deep Learning](#lesson-6-differential-privacy-for-deep-learning)
 - [Lesson 7: Federated Learning](#lesson-7-federated-learning)
@@ -69,6 +84,41 @@ Contributions are always welcome!
 
 
 ## Lesson 4: Evaluating the Privacy of a Function
+### Evaluating The Privacy Of A Function
+* Compare the output of the query on the entire database with the output of the query on each of the parallel databases
+* Sensitivity (L1) is the maximum amount that the query changes when removing an individual from the database
+* The output of the sum is conditioned on every individual that is a 1 in the database
+
+### Project Intro Evaluating The Privacy Of A Function
+* Create a single function called sensitivity (query, n_entries)
+  * Initialize a database of correct size
+  * Initialize all parallel databases
+  * Run the query over all databases
+  * Correctly calculate sensitivity
+  * Return the sensitivity
+
+### Project Demo Evaluating The Privacy Of A Function
+* [Project - Evaluating the Privacy of a Function](https://colab.research.google.com/github/agungsantoso/private-ai/blob/master/Section%201%20-%20Differential%20Privacy.ipynb)
+
+### Project Intro Calculate L1 Sensitivity For Threshold
+* Project 3
+  * Create the query() function
+  * Create 10 databases of size 10
+  * Query each database with a threshold of 5 (calculate sensitivity)
+  * Print out the sensitivity of each database
+
+### Project Demo Calculate L1 Sensitivity For Threshold
+* [Project: Calculate L1 Sensitivity For Threshold](https://colab.research.google.com/github/agungsantoso/private-ai/blob/master/Section%201%20-%20Differential%20Privacy.ipynb)
+
+### Project Intro Perform A Differencing Attack
+* In this concept, we're going to explore how to compromise or attack differential privacy
+* All we would have to do is query for the sum of the entire database and then the sum of the entire database without that person. In SQL, this might look something like this
+  * SELECT count(*) from my_cancer_database;
+  * SELECT count(*) from my_cancer_database WHERE person_name != "john doe";
+* The purpose of this exercise is to give you an intuition for how privacy can fail in these environments.
+
+### Project Demo Perform A Differencing Attack
+* [Project: Perform a Differencing Attack on Row 10](https://colab.research.google.com/github/agungsantoso/private-ai/blob/master/Section%201%20-%20Differential%20Privacy.ipynb)
 
 ## Lesson 5: Introducing Local and Global Differential Privacy
 
