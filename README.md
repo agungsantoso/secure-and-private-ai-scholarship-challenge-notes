@@ -31,6 +31,15 @@ Contributions are always welcome!
   * [Project Intro Perform A Differencing Attack](#project-intro-perform-a-differencing-attack)
   * [Project Demo Perform A Differencing Attack](#project-demo-perform-a-differencing-attack)
 - [Lesson 5: Introducing Local and Global Differential Privacy](#lesson-5-introducing-local-and-global-differential-privacy)
+  * [Introducing Local and Global Differential Privacy](#introducing-local-and-global-differential-privacy)
+  * [Making a Function Differentially Private](#making-a-function-differentially-private)
+  * [Project Intro Implement Local Differential Privacy](#project-intro-implement-local-differential-privacy)
+  * [Project Demo Implement Local Differential Privacy](#project-demo-implement-local-differential-privacy)
+  * [Project Intro Varying the Amount of Noise](#project-intro-varying-the-amount-of-noise)
+  * [Project Demo Varying the Amount of Noise](#project-demo-varying-the-amount-of-noise)
+  * [The Formal Definition of Differential Privacy](#the-formal-definition-of-differential-privacy)
+  * [Create a Differentially Private Query](#create-a-differentially-private-query)
+  * [Project Demo Create a Differentially Private Query](#project-demo-create-a-differentially-private-query)
 - [Lesson 6: Differential Privacy for Deep Learning](#lesson-6-differential-privacy-for-deep-learning)
 - [Lesson 7: Federated Learning](#lesson-7-federated-learning)
 - [Lesson 8: Securing Federated Learning](#lesson-8-securing-federated-learning)
@@ -52,7 +61,7 @@ Contributions are always welcome!
 
 ### What Is Differential Privacy (DP)
 * It's a new field, recently started with statistical database queries around 2003 and even more recently
-* General goal of DP is to ensure that different kinds of statistical analysis don't compromise privacy
+* General goal of DP is to ensure that different kinds of statistical analysis don't co mpromise privacy
 * Privacy is preserved if
   
   After the analysis, the analyzer doesn't know anything about the people in the dataset. They remain "unobserved"
@@ -121,6 +130,72 @@ Contributions are always welcome!
 * [Project: Perform a Differencing Attack on Row 10](https://colab.research.google.com/github/agungsantoso/private-ai/blob/master/Section%201%20-%20Differential%20Privacy.ipynb)
 
 ## Lesson 5: Introducing Local and Global Differential Privacy
+### Introducing Local and Global Differential Privacy
+* Local Differential Privacy adds noise to function data points (function inputs)
+* Global Differential Privacy adds noise to function outputs
+* Trusted Curator is an owner of a database upon which Global Differential privacy is applied. They are trusted to apply DP correctly.
+
+### Making a Function Differentially Private
+* Differential Privacy always requires a form of randomness or noise added to the query to protect from things like Differencing Attacks.
+* Randomized Response is technique that is used in social sciences when trying to learn about the high level trends for a taboo behavior
+  * Have you ever jaywalked, perhaps in the last week?
+* Plausible Deniability
+  * Flip a coin two times
+  * If the first coin flip is heads, answer (yes/no) honestly
+  * If the first coin flip is tails, answer according to the second coin flip
+* Differential Privacy
+  * Most accurate query with the greatest amount of privacy
+  * Greatest fit with trust models in the actual world (don't waste trust)
+
+### Project Intro Implement Local Differential Privacy
+* Implement randomized response in our database
+* Flip two coins by generate two random 1/0 responses in Python
+* Report both the true query and the noised query for database sizes 10, 100, 1000, and 10,000
+
+### Project Demo Implement Local Differential Privacy
+* [Project: Local Differential Privacy](https://colab.research.google.com/github/agungsantoso/private-ai/blob/master/Section%201%20-%20Differential%20Privacy.ipynb)
+
+### Project Intro Varying the Amount of Noise
+* Augment the randomized response query from the previous project to allow for varying amounts of randomness to be added
+* Varying the amount of noise
+  * Add a new parameter to the query function. It will now accept the database and some noise parameter which is percentage
+  * Properly rebalance the result of the query given this adjustable parameter
+
+### Project Demo Varying the Amount of Noise
+* [Project: Varying Amounts of Noise](https://colab.research.google.com/github/agungsantoso/private-ai/blob/master/Section%201%20-%20Differential%20Privacy.ipynb)
+
+### The Formal Definition of Differential Privacy
+* What we cover so far
+  * Local Differential Privacy
+  * Differencing Attack
+  * Basic queries
+  * Sensitivity
+  * Differential Privacy definition
+  * Global Differential Privacy
+* How much noise should we add after the query has been run?
+* "Epsilon" and "Delta" measure a threshold for leakage
+
+### Create a Differentially Private Query
+* How do we actually use epsilon and delta?
+* Randomized mechanism is a function with random noise added to its inputs, outputs, and/or inner workings.
+* Global Differential Privacy adds noise to the output of a query.
+* Local Differential Privacy adds noise to each data input to the query.
+* Privacy budget is how much epsilon/delta leakage we allow for our analysis
+* Types of noise
+  * Gaussian
+  * Laplacian
+* How much noise should we add?
+  * Type of Noise (Gaussian/Laplacian)
+  * Sensitivity of Query
+  * Desired Epsilon (E)
+  * Desired Delta (d)
+* Laplacian noise
+  * b = sensitivity(query)/epsilon
+  * d always zero
+* Laplace function: `np.random.laplace`
+
+### Project Demo Create a Differentially Private Query
+* [Project: Create a Differentially Private Query](https://colab.research.google.com/github/agungsantoso/private-ai/blob/master/Section%201%20-%20Differential%20Privacy.ipynb)
 
 ## Lesson 6: Differential Privacy for Deep Learning
 
