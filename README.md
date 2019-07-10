@@ -198,6 +198,48 @@ Contributions are always welcome!
 * [Project: Create a Differentially Private Query](https://colab.research.google.com/github/agungsantoso/private-ai/blob/master/Section%201%20-%20Differential%20Privacy.ipynb)
 
 ## Lesson 6: Differential Privacy for Deep Learning
+### Differential Privacy for Deep Learning
+* Perfect Privacy is a query to a database returns the same value even if we remove any person from the database
+* Perfect Privacy (AI model) is training a model on a dataset should return the same model even if we remove any person from the training dataset
+* Two points of complexity
+  * Do we always know where "people" are referenced in the dataset?
+  * Neural models rarely ever train to the same location, even when trained on the same dataset twice
+  
+### Project Intro Example Scenario Deep Learning in a Hospital
+* Ask each hospital to train a model on their own dataset
+* Use each model to predict on your own local dataset, generating 10 labels for each datapoint
+* Perform a DP query to generate the final true (DP) label for each datapooint
+* Retrain a new model on our local dataset which now has DP labels
+
+### Generating Differentially Private Labels For a Dataset
+* [An Example Scenario: A Health Neural Network](https://colab.research.google.com/github/agungsantoso/private-ai/blob/master/Section%201%20-%20Differential%20Privacy.ipynb#scrollTo=oiCsG_1gcZv7)
+
+### PATE Analysis
+* [PATE Analysis](https://colab.research.google.com/github/agungsantoso/private-ai/blob/master/Section%201%20-%20Differential%20Privacy.ipynb#scrollTo=oiCsG_1gcZv7)
+
+### Where to Go From Here
+* Read:
+  * [Algorithmic Foundations of Differential Privacy](https://www.cis.upenn.edu/~aaroth/Papers/privacybook.pdf)
+  * [Deep Learning with Differentail Privacy](https://arxiv.org/pdf/1607.00133.pdf)
+* Topics:
+  * The Exponential Mechanism
+  * The Moment's Accountant
+  * Differentially Private Stochastic Gradient Descent
+* Advice:
+  * For deployments - stick with public frameworks!
+  * Join the Differential Privacy Community
+  * DP is still in the early days
+
+### Final Project Description
+* Labelled private dataset which you must keep differentially private
+* Public unlabeled dataset which you don't need to keep differentially private
+* Label public unlabeled data using private dataset and train model based on that public data
+
+### Guest Interview: Differential Privacy at Apple
+
+
+### Guest Interview: Privacy and Society - OpenAI
+
 
 ## Lesson 7: Federated Learning
 
