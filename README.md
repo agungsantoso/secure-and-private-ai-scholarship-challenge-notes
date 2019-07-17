@@ -50,6 +50,20 @@ Contributions are always welcome!
   * [Guest Interview: Differential Privacy at Apple](#guest-interview-differential-privacy-at-apple)
   * [Guest Interview: Privacy and Society - OpenAI](#guest-interview-privacy-and-society---openai)
 - [Lesson 7: Federated Learning](#lesson-7-federated-learning)
+  * [Introducing Federated Learning](#introducing-federated-learning)
+  * [Introducing PySyft](#introducing-pysyft)
+  * [Introducing OpenMined and Installing PySyft](#introducing-openmined-and-installing-pysyft)
+  * [Basic Remote Execution in PySyft](#basic-remote-execution-in-pysyft)
+  * [Playing with Remote Tensors](#playing-with-remote-tensors)
+  * [Introducing Remote Arithmetic in PySyft](#introducing-remote-arithmetic-in-pysyft)
+  * [Learn a Simple Linear Model](#learn-a-simple-linear-model)
+  * [Garbage Collection and Common Errors](#garbage-collection-and-common-errors)
+  * [Toy Federated Learning](#toy-federated-learning)
+  * [Advanced Remote Execution Tools](#advanced-remote-execution-tools)
+  * [PointerChain Operations](#pointerchain-operations)
+  * [Final Project Description](#final-project-description-1)
+  * [Guest Interview: Federated Learning at Google](#guest-interview-federated-learning-at-google)
+  * [Notebook](#notebook)
 - [Lesson 8: Securing Federated Learning](#lesson-8-securing-federated-learning)
 - [Lesson 9: Encrypted Deep Learning](#lesson-9-encrypted-deep-learning)
 - [Resources](#resources)
@@ -250,6 +264,36 @@ Contributions are always welcome!
 
 
 ## Lesson 7: Federated Learning
+### Introducing Federated Learning
+* Federated Learning is a technique for training Machine Learning models on data to which you do not have access
+
+### Introducing PySyft
+* PySyft is the extension to the major deep learning toolkits
+
+### Introducing OpenMined and Installing PySyft
+
+### Basic Remote Execution in PySyft
+
+### Playing with Remote Tensors
+
+### Introducing Remote Arithmetic in PySyft
+
+### Learn a Simple Linear Model
+
+### Garbage Collection and Common Errors
+
+### Toy Federated Learning
+
+### Advanced Remote Execution Tools
+
+### PointerChain Operations
+
+### Final Project Description
+
+### Guest Interview: Federated Learning at Google
+
+### Notebook
+* [Section 2 - Federated Learning](https://github.com/agungsantoso/private-ai/blob/master/Section%202%20-%20Federated%20Learning.ipynb)
 
 ## Lesson 8: Securing Federated Learning
 
