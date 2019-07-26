@@ -296,8 +296,37 @@ Contributions are always welcome!
 * [Section 2 - Federated Learning](https://github.com/agungsantoso/private-ai/blob/master/Section%202%20-%20Federated%20Learning.ipynb)
 
 ## Lesson 8: Securing Federated Learning
+### Securing Federated Learning
+* Trusted Aggregator is a neutral 3rd party who has a machine that we can trust to not look at the gradients when performing the aggregation
+
+### Project Demo Federated Learning with Trusted Aggregator
+* [Lesson: Federated Learning with a Trusted Aggregator](https://github.com/agungsantoso/private-ai/blob/master/Section%203%20-%20Securing%20Federated%20Learning.ipynb)
+
+### Intro to Additive Secret Sharing
+* Additive secret sharing allows multiple individuals to add numbers together without any person learning anyone else's inputs to the addition
+
+### Fixing Additive Secret Sharing
+* We add modulus as Q to decryption process which will actually be shares summed together
+
+### Project Intro Build Methods for Encrypt Decrypt and Add
+* encrypt()
+* decrypt()
+* add
+
+### Project Demo - Build Methods for Encrypt, Decrypt, and Add
+* [Project: Build Methods for Encrypt, Decrypt, and Add](https://github.com/agungsantoso/private-ai/blob/master/Section%203%20-%20Securing%20Federated%20Learning.ipynb)
+
+### Intro to Fixed Precision Encoding
+* [Lesson: Intro to Fixed Precision Encoding](https://github.com/agungsantoso/private-ai/blob/master/Section%203%20-%20Securing%20Federated%20Learning.ipynb)
+
+### Secret Sharing and Fixed Precision in PySyft
+* [Lesson: Secret Sharing + Fixed Precision in PySyft](https://github.com/agungsantoso/private-ai/blob/master/Section%203%20-%20Securing%20Federated%20Learning.ipynb)
+
+### Final Project Description
+* Federated Learning with Encrypted Gradient Aggregation
 
 ## Lesson 9: Encrypted Deep Learning
+
 
 ## Resources
 
