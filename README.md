@@ -65,7 +65,25 @@ Contributions are always welcome!
   * [Guest Interview: Federated Learning at Google](#guest-interview-federated-learning-at-google)
   * [Notebook](#notebook)
 - [Lesson 8: Securing Federated Learning](#lesson-8-securing-federated-learning)
+  * [Securing Federated Learning](#securing-federated-learning)
+  * [Project Demo Federated Learning with Trusted Aggregator](#project-demo-federated-learning-with-trusted-aggregator)
+  * [Intro to Additive Secret Sharing](#intro-to-additive-secret-sharing)
+  * [Fixing Additive Secret Sharing](#fixing-additive-secret-sharing)
+  * [Project Intro Build Methods for Encrypt Decrypt and Add](#project-intro-build-methods-for-encrypt-decrypt-and-add)
+  * [Project Demo - Build Methods for Encrypt, Decrypt, and Add](#project-demo---build-methods-for-encrypt-decrypt-and-add)
+  * [Intro to Fixed Precision Encoding](#intro-to-fixed-precision-encoding)
+  * [Secret Sharing and Fixed Precision in PySyft](#secret-sharing-and-fixed-precision-in-pysyft)
+  * [Final Project Description](#final-project-description-2)
 - [Lesson 9: Encrypted Deep Learning](#lesson-9-encrypted-deep-learning)
+  * [Introducing Encrypted Deep Learning](#introducing-encrypted-deep-learning)
+  * [Encrypted Subtraction and Public Multiplication](#encrypted-subtraction-and-public-multiplication)
+  * [Encrypted Computation in PySyft](#encrypted-computation-in-pysyft)
+  * [Project Intro - Build an Encrypted Database](#project-intro---build-an-encrypted-database)
+  * [Project Demo - Build an Encrypted Database](#project-demo---build-an-encrypted-database)
+  * [Encrypted Deep Learning in PyTorch](#encrypted-deep-learning-in-pytorch)
+  * [Encrypted Deep Learning in Keras](#encrypted-deep-learning-in-keras)
+  * [Keystone Project Description](#keystone-project-description)
+  * [Secure & Private AI Program Conclusion](#secure--private-ai-program-conclusion)
 - [Resources](#resources)
 - [Credits](#credits)
 
@@ -326,7 +344,21 @@ Contributions are always welcome!
 * Federated Learning with Encrypted Gradient Aggregation
 
 ## Lesson 9: Encrypted Deep Learning
+### Introducing Encrypted Deep Learning
+* [Lesson: Reviewing Additive Secret Sharing](https://github.com/agungsantoso/private-ai/blob/master/Section%204%20-%20Encrypted%20Deep%20Learning.ipynb)
 
+### Encrypted Subtraction and Public Multiplication
+* [Lesson: Encrypted Subtraction and Public/Scalar Multiplication](https://github.com/agungsantoso/private-ai/blob/master/Section%204%20-%20Encrypted%20Deep%20Learning.ipynb)
+
+### Encrypted Computation in PySyft
+* [Lesson: Encrypted Computation in PySyft](https://github.com/agungsantoso/private-ai/blob/master/Section%204%20-%20Encrypted%20Deep%20Learning.ipynb)
+
+### Project Intro - Build an Encrypted Database
+### Project Demo - Build an Encrypted Database
+### Encrypted Deep Learning in PyTorch
+### Encrypted Deep Learning in Keras
+### Keystone Project Description
+### Secure & Private AI Program Conclusion
 
 ## Resources
 
