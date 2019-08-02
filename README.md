@@ -354,9 +354,17 @@ Contributions are always welcome!
 * [Lesson: Encrypted Computation in PySyft](https://github.com/agungsantoso/private-ai/blob/master/Section%204%20-%20Encrypted%20Deep%20Learning.ipynb)
 
 ### Project Intro - Build an Encrypted Database
+* [Project: Build an Encrypted Database](https://github.com/agungsantoso/private-ai/blob/master/Section%204%20-%20Encrypted%20Deep%20Learning.ipynb)
+
 ### Project Demo - Build an Encrypted Database
+
 ### Encrypted Deep Learning in PyTorch
+* [Lesson: Encrypted Deep Learning in PyTorch](https://github.com/agungsantoso/private-ai/blob/master/Section%204%20-%20Encrypted%20Deep%20Learning.ipynb)
+
 ### Encrypted Deep Learning in Keras
+* [Lesson: Encrypted Deep Learning in Keras](https://github.com/agungsantoso/private-ai/blob/master/Section%204%20-%20Encrypted%20Deep%20Learning.ipynb)
+* [Step 2: Private Prediction using Syft Keras - Serving (Client)](https://github.com/agungsantoso/private-ai/blob/master/Section%204b%20-%20Encrypted%20Keras%20Client.ipynb)
+
 ### Keystone Project Description
 ### Secure & Private AI Program Conclusion
 
